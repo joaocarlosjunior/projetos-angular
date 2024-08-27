@@ -1,0 +1,35 @@
+<div class="ca-c-card">
+  <div class="ca-c-card__header">
+    <app-title-card
+      [title]="'Cartão de Crédito'"
+      [icon]="'assets/icons/icon-debit-card.png'"
+    ></app-title-card>
+  </div>
+
+  <div class="ca-c-card__content">
+    <div class="ca-c-card-item">
+      <span
+        >1234567891011 <br />
+        JOAO CARLOS RIBAS
+      </span>
+      <span>MASTER CARD</span>
+    </div>
+
+    <app-item-card [text]="'Limite de Compra'" [value]="'R$ 1000'"></app-item-card>
+
+    <app-card-line></app-card-line>
+
+    <app-item-card [text]="'Disponível'" [value]="'R$ 1200'"></app-item-card>
+
+    <app-item-card [text]="'Limite de Saque'" [value]="'R$ 900'"></app-item-card>
+
+    <app-card-line></app-card-line>
+
+    <app-item-card [text]="'Disponível'" [value]="'R$ 1300'"></app-item-card>
+
+    <app-item-card
+      [text]="'Limite Total Utilizado'"
+      [value]="'R$ 3000'"
+    ></app-item-card>
+  </div>
+</div>

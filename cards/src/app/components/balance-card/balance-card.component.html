@@ -1,0 +1,41 @@
+<div class="ca-c-card">
+  <div class="ca-c-card__header balance-card__header">
+    <app-title-card
+      [title]="title"
+      [icon]="'assets/icons/hand.png'"
+    ></app-title-card>
+    <p>R$ {{ availableBalance }}</p>
+  </div>
+  <div class="ca-c-card__content">
+    <app-item-card
+      [text]="'Conta Corrente'"
+      [value]="'R$ ' + currentAccountBalance"
+    ></app-item-card>
+    <app-card-line></app-card-line>
+    <app-item-card
+      [text]="'Conta Corrente Saldo Vinculados'"
+      [value]="'R$ ' + currentAccountLinkedBalance"
+    ></app-item-card>
+    <app-card-line></app-card-line>
+    <app-item-card
+      [text]="'Investimentos com Baixa Automática'"
+      [value]="'R$ ' + investmentsAutomaticLow"
+    ></app-item-card>
+    <app-card-line></app-card-line>
+    <app-item-card
+      [text]="'Investimentos sem Baixa Automática'"
+      [value]="'R$ ' + investmentsWithoutAutomaticLow"
+    ></app-item-card>
+    <app-card-line></app-card-line>
+    <div class="balance-card__content-summary">
+      <app-item-card
+        [text]="'SALDO TOTAL'"
+        [value]="'R$ ' + totalBalance"
+      ></app-item-card>
+      <app-item-card
+        [text]="'LIVRE PARA MOVIMENTAÇÃO'"
+        [value]="'R$ ' + freeToMove"
+      ></app-item-card>
+    </div>
+  </div>
+</div>

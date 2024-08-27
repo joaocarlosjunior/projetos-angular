@@ -1,0 +1,25 @@
+//cursoangular-component-card
+.ca-c-card{
+    background-color: #fff;
+    border-radius: 6px;
+    border: none;
+    overflow: hidden;
+
+    &__header{
+        padding: 15px;
+        background-color: rgb(233,129,50);
+
+        &--bg-blue{
+            background-color: aqua;
+        }
+    }
+    
+    &__content {
+        padding: 15px;
+        overflow: hidden;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #fff;
+    }
+
+}

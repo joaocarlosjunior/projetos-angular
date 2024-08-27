@@ -1,0 +1,22 @@
+<div class="ca-c-card">
+  <div class="ca-c-card__header ca-c-card__header--bg-blue">
+    <app-title-card
+      [title]="'Informações do Cliente'"
+      [icon]="'assets/icons/icon-client.png'"
+    ></app-title-card>
+  </div>
+
+  <div class="ca-c-card__content">
+    <app-item-card
+      [text]="'Nome'"
+      [value]="'João Carlos Ribas'"
+    ></app-item-card>
+    <app-card-line></app-card-line>
+    <app-item-card [text]="'Idade'" [value]="'26 anos'"></app-item-card>
+    <app-card-line></app-card-line>
+    <app-item-card
+      [text]="'Renda Mensal'"
+      [value]="'R$ -1000,00'"
+    ></app-item-card>
+  </div>
+</div>
